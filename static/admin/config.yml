@@ -19,3 +19,4 @@ collections:
       - {label: "Ingredients", name: "ingredients", widget: "list"}
       - {label: "Préparation / cuisson", name: "preparation_time", widget: "number"}
       - {label: "Nombre de personnes", name: "persons_number", widget: "number"}
+      - {label: "Mots clefs", name: "tags", widget: "list"}

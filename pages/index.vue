@@ -11,6 +11,22 @@
           <nuxt-link :to="`/recette/${recette.slug}`">
             <h2 class="title is-2">{{recette.title}}</h2>
           </nuxt-link>
+          <div>
+            <div
+              style="margin-right:1rem"
+              class="tag"
+              v-for="(ingredient,i) in recette.ingredients"
+              :key="i"
+            >{{ingredient}}</div>
+          </div>
+          <div>
+            <div
+              style="margin-right:1rem"
+              class="tag is-warning"
+              v-for="(tag,i) in recette.tags"
+              :key="i"
+            >{{ingredient}}</div>
+          </div>
           <p style="margin-top:1rem">{{recette.teaser}}</p>
         </div>
       </div>
