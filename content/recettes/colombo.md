@@ -1,17 +1,18 @@
 ---
 title: Colombo
-description: la description du colombo
-# en minutes
-temps_preparation: 30
+date: 2018-12-20T21:33:32.519Z
+thumbnail: >-
+  /static/images/uploads/pommes-de-terre-et-poireaux-aux-epices-colombo-vegan.jpg
 ingredients:
-- 250 g de pommes de terre nouvelles
-- 4 petits poireaux (et/ou baraganes)
-- 1 oignon nouveau
-- 1 gousse d’ail
-- 1 filet d’huile d’olive
-- 1 belle cuillère à soupe d’épices Colombo
-- Gomasio ou sel
-- Poivre
+  - 250 g de pommes de terre nouvelles
+  - 4 petits poireaux (et/ou baraganes)
+  - 1 oignon nouveau
+  - ''
+  - 1 gousse d’ail
+  - 1 filet d’huile d’olive
+  - 1 belle cuillère à soupe d’épices Colombo
+  - Gomasio ou sel
+  - Poivre
 ---
 
 ## Préparation
