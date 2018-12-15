@@ -21,11 +21,11 @@
           </div>
           <div>
             <div
-              style="margin-right:1rem"
+              style="margin-right:1rem;margin-top:1rem"
               class="tag is-warning"
               v-for="(tag,i) in recette.tags"
               :key="i"
-            >{{ingredient}}</div>
+            >{{tag}}</div>
           </div>
           <p style="margin-top:1rem">{{recette.teaser}}</p>
         </div>

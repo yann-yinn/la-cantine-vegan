@@ -4,6 +4,14 @@
     <div class="featured-image-wrapper">
       <img class="featured-image" :src="recette.featured_image.replace('/static', '')">
     </div>
+    <div>
+      <div
+        style="margin-right:1rem;margin-top:1rem"
+        class="tag is-warning"
+        v-for="(tag,i) in recette.tags"
+        :key="i"
+      >{{tag}}</div>
+    </div>
     <hr>
     <div>
       <strong>Préparation et cuisson</strong>
