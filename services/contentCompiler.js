@@ -43,7 +43,7 @@ function renderRecettesAsJson() {
         // des mots clefs qui pourront être utilisé par le moteur de recherche du site
         parsed.search_keywords = [
           ...parsed.ingredients,
-          parsed.titre
+          parsed.title
         ]
 
         json.push(parsed)
