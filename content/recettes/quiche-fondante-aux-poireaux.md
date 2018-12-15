@@ -6,9 +6,13 @@ ingredients:
   - name: pâte feuilletée vegan
     quantity: '1'
   - name: crème soja
-    quantity: '20cl'
+    quantity: 20cl
+  - name: poireaux
+    quantity: 4 petits
 preparation_time: '30'
 persons_number: '4'
+tags:
+  - tarte
 ---
 Laver et couper en morceaux les poireaux. Les faire revenir 15 minutes avec du sel et une peu d’huile dans un poêle.
 
