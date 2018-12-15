@@ -4,10 +4,10 @@ description: Somme toute, c'est un peu le cousin anglais du hachis parmentier. C
 # en minutes
 temps_preparation: 60
 ingredients:
-  - 1kg de pomme de terre Charlotte
-  - 10cl de crème de soja
-  - 2 gousses d'ails
-  - 1 carrotte
+- 1kg de pomme de terre Charlotte
+- 10cl de crème de soja
+- 2 gousses d'ails
+- 1 carrotte
 ---
 
 ## Préparation

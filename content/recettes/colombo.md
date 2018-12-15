@@ -4,14 +4,14 @@ description: la description du colombo
 # en minutes
 temps_preparation: 30
 ingredients:
-  - 250 g de pommes de terre nouvelles
-  - 4 petits poireaux (et/ou baraganes)
-  - 1 oignon nouveau
-  - 1 gousse d’ail
-  - 1 filet d’huile d’olive
-  - 1 belle cuillère à soupe d’épices Colombo
-  - Gomasio ou sel
-  - Poivre
+- 250 g de pommes de terre nouvelles
+- 4 petits poireaux (et/ou baraganes)
+- 1 oignon nouveau
+- 1 gousse d’ail
+- 1 filet d’huile d’olive
+- 1 belle cuillère à soupe d’épices Colombo
+- Gomasio ou sel
+- Poivre
 ---
 
 ## Préparation
