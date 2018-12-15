@@ -10,7 +10,7 @@ teaser: >-
   Couper les pommes de terre en quartier et les faire cuire à la vapeur pendant
   environ 20 minutes. Mes pommes de terre étant nouvelles et bios, j’ai choisi
   de conserver la peau.
-ingredient:
+ingredients:
   - name: pommes de terres
     quantity: 250g de
   - name: petits poireaux
