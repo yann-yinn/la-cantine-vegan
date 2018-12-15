@@ -17,7 +17,7 @@
               class="tag"
               v-for="(ingredient,i) in recette.ingredients"
               :key="i"
-            >{{ingredient}}</div>
+            >{{ingredient.name}}</div>
           </div>
           <div>
             <div

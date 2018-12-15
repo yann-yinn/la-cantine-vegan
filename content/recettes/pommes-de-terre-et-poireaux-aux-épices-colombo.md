@@ -10,13 +10,6 @@ teaser: >-
   Couper les pommes de terre en quartier et les faire cuire à la vapeur pendant
   environ 20 minutes. Mes pommes de terre étant nouvelles et bios, j’ai choisi
   de conserver la peau.
-ingredients:
-  - 250 g de pommes de terre nouvelles
-  - 4 petits poireaux (et/ou baraganes)
-  - 1 oignon nouveau
-  - 1 gousse d’ail
-  - 1 filet d’huile d’olive
-  - 1 belle cuillère à soupe d’épices Colombo Gomasio ou sel Poivre
 preparation_time: 60
 persons_number: 4
 tags:

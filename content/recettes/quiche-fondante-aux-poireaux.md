@@ -2,14 +2,6 @@
 title: Quiche fondante aux poireaux
 featured_image: /static/uploads/quiche-fondante-poireaux-1024x683.jpg
 teaser: Une délicieuse tarte aux poireaux !
-ingredients:
-  - 1 pâte feuilletée vegan
-  - 500 g de poireaux (surgelés ou frais)
-  - 40 cl (2 briques) de crème végétale au choix (soja
-  - amande ou autre)
-  - 3 càs de fécule de maïs (type Maïzena)
-  - Huile végétale
-  - Sel
 preparation_time: '30'
 persons_number: '4'
 ---
