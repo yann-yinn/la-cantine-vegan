@@ -10,14 +10,22 @@ teaser: >-
   Couper les pommes de terre en quartier et les faire cuire à la vapeur pendant
   environ 20 minutes. Mes pommes de terre étant nouvelles et bios, j’ai choisi
   de conserver la peau.
+ingredient:
+  - name: pommes de terres
+    quantity: 250g de
+  - name: petits poireaux
+    quantity: '4'
+  - name: oignon nouveau
+    quantity: '1'
+  - name: gousse d'ail
+    quantity: '1'
+  - name: filet d'huile d'olive
+    quantity: '1'
 preparation_time: 60
 persons_number: 4
 tags:
   - comfort-food
   - exotique
-ingredients:
-- name: "test"
-  quantity: "un peu"
 ---
 Peler l’ail et l’oignon et les émincer finement (garder la partie verte de l’oignon pour faire cuire avec les poireaux).
 
