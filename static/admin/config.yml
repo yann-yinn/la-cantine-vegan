@@ -4,7 +4,7 @@ backend:
 # This line should *not* be indented
 publish_mode: editorial_workflow
 # This line should *not* be indented
-media_folder: "static/images/uploads" # Media files will be stored in the repo under images/uploads
+media_folder: static/uploads # Media files will be stored in the repo under images/uploads
 collections:
   - name: "recette" # Used in routes, e.g., /admin/collections/blog
     label: "Recette" # Used in the UI
@@ -13,5 +13,7 @@ collections:
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "published_date", widget: "datetime"}
+      - {label: "Featured Image", name: "featured_image", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Ingredients", name: "ingredients", widget: "list"}
