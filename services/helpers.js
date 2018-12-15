@@ -1,4 +1,4 @@
-import persons from '../static/api/persons.json'
+import recettes from '../static/api/recettes.json'
 import pages from '../static/api/pages.json'
 
 /**
@@ -19,8 +19,8 @@ export function shuffle(array) {
 
 export function generateRoutes() {
   const routes = [
-    ...persons.map(resource => `/person/${resource.slug}`),
-    ...pages.map(resource => `/page/${resource.slug}`)
+    ...recettes.map(r => `/recette/${r.slug}`),
+    ...pages.map(r => `/page/${r.slug}`)
   ]
   return routes
 }
