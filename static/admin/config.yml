@@ -13,7 +13,9 @@ collections:
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Titre", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "published_date", widget: "datetime"}
       - {label: "Featured Image", name: "featured_image", widget: "image"}
+      - {label: "Teaser", name: "teaser", widget: "markdown"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Ingredients", name: "ingredients", widget: "list"}
+      - {label: "Préparation / cuisson", name: "preparation_time", widget: "string"}
+      - {label: "Nombre de personnes", name: "persons_number", widget: "number"}
