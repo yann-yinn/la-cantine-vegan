@@ -1,10 +1,19 @@
 <template>
   <div class="container section">
     <div v-for="(recette, i) in recettes" :key="i">
-      <nuxt-link :to="`/recette/${recette.slug}`">
-        <h2 class="title is-2">{{recette.title}}</h2>
-      </nuxt-link>
-      <p style="margin-top:1rem">{{recette.description}}</p>
+      <div class="columns">
+        <div class="column is-one-quarter">
+          <div class="featured-image-wrapper">
+            <img class="featured-image" :src="recette.featured_image.replace('/static', '')">
+          </div>
+        </div>
+        <div class="column">
+          <nuxt-link :to="`/recette/${recette.slug}`">
+            <h2 class="title is-2">{{recette.title}}</h2>
+          </nuxt-link>
+          <p style="margin-top:1rem">{{recette.teaser}}</p>
+        </div>
+      </div>
       <hr>
     </div>
   </div>
@@ -22,4 +31,16 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.featured-image-wrapper {
+  max-height: 200px;
+  overflow: hidden;
+}
+
+.featured-image {
+  object-fit: cover;
+  max-height: 200px;
+}
+</style>
 

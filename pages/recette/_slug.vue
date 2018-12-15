@@ -1,18 +1,28 @@
 <template>
   <div class="container section">
     <h1 class="title is-1">{{recette.title}}</h1>
+    <div class="featured-image-wrapper">
+      <img class="featured-image" :src="recette.featured_image.replace('/static', '')">
+    </div>
     <hr>
     <div>
       <strong>Préparation et cuisson</strong>
-      : {{recette.temps_preparation}} min
+      : {{recette.preparation_time}} min
     </div>
     <hr>
+
+    <strong>Ingrédients:</strong>
+    <br>
+    <br>
     <div class="ingredients">
       <ul>
         <li v-for="(ingredient,i) in recette.ingredients" :key="i">{{ingredient}}</li>
       </ul>
     </div>
     <hr>
+    <strong>Préparation</strong>
+    <br>
+    <br>
     <div class="content" v-html="recette.__html"></div>
   </div>
 </template>
@@ -73,3 +83,17 @@ export default {
   */
 }
 </script>
+
+<style scoped>
+.featured-image-wrapper {
+  max-height: 200px;
+  overflow: hidden;
+}
+
+.featured-image {
+  object-fit: cover;
+  max-height: 200px;
+}
+</style>
+
+
