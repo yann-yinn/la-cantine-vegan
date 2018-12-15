@@ -1,5 +1,5 @@
 ---
-titre: Colombo
+title: Colombo
 description: la description du colombo
 # en minutes
 temps_preparation: 30

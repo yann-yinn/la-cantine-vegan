@@ -1,5 +1,5 @@
 ---
-titre: Bouillon thaï aux nouilles de riz
+title: Bouillon thaï aux nouilles de riz
 description: la description du colombo
 # en minutes
 temps_preparation: 30

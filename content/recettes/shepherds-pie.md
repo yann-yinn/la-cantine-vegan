@@ -1,5 +1,5 @@
 ---
-titre: Shepherd's pie
+title: Shepherd's pie
 description: Somme toute, c'est un peu le cousin anglais du hachis parmentier. Cela dit, les différences sont nombreuses malgré les apparences. A titre personnel, je préfère d'ailleurs cette version au caractère un peu plus marqué.
 # en minutes
 temps_preparation: 60

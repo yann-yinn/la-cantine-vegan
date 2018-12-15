@@ -2,7 +2,7 @@
   <div class="container section">
     <div v-for="(recette, i) in recettes" :key="i">
       <nuxt-link :to="`/recette/${recette.slug}`">
-        <h2 class="title is-2">{{recette.titre}}</h2>
+        <h2 class="title is-2">{{recette.title}}</h2>
       </nuxt-link>
       <p style="margin-top:1rem">{{recette.description}}</p>
       <hr>

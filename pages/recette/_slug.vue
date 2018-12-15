@@ -1,6 +1,6 @@
 <template>
   <div class="container section">
-    <h1 class="title is-1">{{recette.titre}}</h1>
+    <h1 class="title is-1">{{recette.title}}</h1>
     <hr>
     <div>
       <strong>Préparation et cuisson</strong>
