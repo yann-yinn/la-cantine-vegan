@@ -27,7 +27,7 @@ function renderRecettesAsJson() {
     const json = []
     files.forEach(filename => {
       // ne pas inclure les fichiers qui commencent par un underscore
-      if (filename.indexOf('_') != 0) {
+      if (filename.indexOf('_') != 0 && filename.indexOf('.') != 0) {
         const fileContent = fs.readFileSync(
           `content/${type}/${filename}`,
           'utf8'
@@ -66,7 +66,7 @@ function renderPagesAsJson() {
     const json = []
     files.forEach(filename => {
       // ne pas inclure les fichiers qui commencent par un underscore
-      if (filename.indexOf('_') != 0) {
+      if (filename.indexOf('_') != 0 && filename.indexOf('.') != 0) {
         const fileContent = fs.readFileSync(`content/pages/${filename}`, 'utf8')
         let parsed = {}
         parsed.slug = slug(filename.substring(0, filename.length - 2))
