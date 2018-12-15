@@ -4,7 +4,7 @@
       <div class="navbar-brand">
         <span class="navbar-item">
           <strong>
-            <nuxt-link style="color:black" to="/">LA CANTINE VEGAN 🥣</nuxt-link>
+            <nuxt-link style="color:black" to="/">LA CANTINE VEGAN 🍟</nuxt-link>
           </strong>
         </span>
         <div

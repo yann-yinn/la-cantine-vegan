@@ -1,10 +1,11 @@
 <template>
   <div class="container section">
-    <div style="padding-bottom:1rem" v-for="(recette, i) in recettes" :key="i">
+    <div v-for="(recette, i) in recettes" :key="i">
       <nuxt-link :to="`/recette/${recette.slug}`">
         <h2 class="title is-2">{{recette.titre}}</h2>
       </nuxt-link>
-      <p>{{recette.description}}</p>
+      <p style="margin-top:1rem">{{recette.description}}</p>
+      <hr>
     </div>
   </div>
 </template>
