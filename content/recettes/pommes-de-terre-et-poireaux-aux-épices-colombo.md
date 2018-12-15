@@ -19,6 +19,9 @@ ingredients:
   - 1 belle cuillère à soupe d’épices Colombo Gomasio ou sel Poivre
 preparation_time: 60
 persons_number: 4
+tags:
+  - comfort-food
+  - exotique
 ---
 Peler l’ail et l’oignon et les émincer finement (garder la partie verte de l’oignon pour faire cuire avec les poireaux).
 
