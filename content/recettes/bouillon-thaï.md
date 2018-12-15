@@ -1,18 +1,7 @@
 ---
 title: Bouillon thaï aux nouilles de riz
-description: la description du colombo
-# en minutes
-temps_preparation: 30
-ingredients:
-- 125 g de nouilles de riz
-- 1 petit brocoli
-- 1 carotte moyenne
-- 1 morceau de gingembre (2 cm environ)
-- 1 l d’eau
-- 1 cube de bouillon standard
 ---
-
-## Préparation
+## Préparation test édition.
 
 Mettre 1L d’eau à bouillir avec les 2 cubes de bouillon.
 
