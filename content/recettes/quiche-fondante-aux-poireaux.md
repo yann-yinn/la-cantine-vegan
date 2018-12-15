@@ -1,6 +1,6 @@
 ---
 title: Quiche fondante aux poireaux
-featured_image: /static/uploads/quiche-fondante-poireaux-1024x683.jpg
+featured_image: /uploads/quiche-fondante-poireaux-1024x683.jpg
 teaser: Une délicieuse tarte aux poireaux !
 ingredients:
   - name: pâte feuilletée vegan
