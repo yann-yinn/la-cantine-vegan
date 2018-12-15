@@ -23,7 +23,7 @@ function compile() {
  */
 function renderRecettesAsJson() {
   const type = "recettes"
-  fs.readdir(`content/${type}`, (err, files) => {
+  fs.readdir(`static/content/${type}`, (err, files) => {
     const json = []
     files.forEach(filename => {
       // ne pas inclure les fichiers qui commencent par un underscore
@@ -62,7 +62,7 @@ function renderRecettesAsJson() {
  * Création d'un fichier pages.json depuis les fichiers content/pages/*.md
  */
 function renderPagesAsJson() {
-  fs.readdir('content/pages', (err, files) => {
+  fs.readdir('static/content/pages', (err, files) => {
     const json = []
     files.forEach(filename => {
       // ne pas inclure les fichiers qui commencent par un underscore
