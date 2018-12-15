@@ -15,6 +15,9 @@ persons_number: 4
 tags:
   - comfort-food
   - exotique
+ingredients:
+- name: "test"
+  quantity: "un peu"
 ---
 Peler l’ail et l’oignon et les émincer finement (garder la partie verte de l’oignon pour faire cuire avec les poireaux).
 

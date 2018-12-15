@@ -4,6 +4,10 @@ featured_image: /static/uploads/quiche-fondante-poireaux-1024x683.jpg
 teaser: Une délicieuse tarte aux poireaux !
 preparation_time: '30'
 persons_number: '4'
+ingredients:
+  - name: "test"
+    quantity: "un peu"
+
 ---
 Laver et couper en morceaux les poireaux. Les faire revenir 15 minutes avec du sel et une peu d’huile dans un poêle.
 
