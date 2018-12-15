@@ -1,5 +1,14 @@
 ---
 title: Bouillon thaï aux nouilles de riz
+ingredients:
+- Nouilles
+- 4 petits poireaux (et/ou baraganes)
+- 1 oignon nouveau
+- 1 gousse d’ail
+- 1 filet d’huile d’olive
+- 1 belle cuillère à soupe d’épices Colombo
+- Gomasio ou sel
+- Poivre
 ---
 ## Préparation test édition.
 
