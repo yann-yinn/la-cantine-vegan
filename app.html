@@ -1,18 +1,30 @@
 <!DOCTYPE html>
 <html {{ HTML_ATTRS }}>
-  <head>
-    {{
-      HEAD
-    }}
-    <!--
+
+<head>
+  {{
+  HEAD
+  }}
+  <!--
       fontawesome est inclus manuellement ici sinon l'attribut defer n'apparaît pas
     -->
-    <script
-      defer
-      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
-    ></script>
-  </head>
-  <body {{ BODY_ATTRS }}>
-    {{ APP }}
-  </body>
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+
+<body {{ BODY_ATTRS }}>
+  {{ APP }}
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
+</body>
+
 </html>
