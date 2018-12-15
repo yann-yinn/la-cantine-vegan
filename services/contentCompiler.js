@@ -41,10 +41,11 @@ function renderRecettesAsJson() {
         parsed.__html = md.render(parsed.__content)
 
         // des mots clefs qui pourront être utilisé par le moteur de recherche du site
-        parsed.search_keywords = [
-          ...parsed.ingredients.map(i => i.name),
-          parsed.title
-        ]
+        parsed.search_keywords = [parsed.title]
+
+        if (parsed.ingredients && parsed.ingredients.length > 0) {
+          parsed.search_keywords.push(...parsed.ingredients.map(i => i.name))
+        }
 
         json.push(parsed)
       }
