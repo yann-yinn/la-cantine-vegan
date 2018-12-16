@@ -54,7 +54,7 @@ persons_number: '4'
 tags:
   - indien comfort food
 ---
-1. Equeuter et laver les épinards ainsi que les pommes de terre. Les faire cuire ensemble à la vapeur.
+1. Equeuter et laver les épinards ainsi que les pommes de terre coupées en gros morceaux. Les faire cuire ensemble à la vapeur.
 
 2. Pendant ce temps, préparer le bouillon : 
 
