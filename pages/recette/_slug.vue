@@ -1,8 +1,13 @@
 <template>
   <div class="container section">
     <h1 class="title is-1">{{recette.title}}</h1>
-    <div class="featured-image-wrapper">
-      <img class="featured-image" :src="recette.featured_image">
+    <div class="columns">
+      <div class="column">
+        <div class="featured-image-wrapper">
+          <img class="featured-image" :src="recette.featured_image">
+        </div>
+      </div>
+      <div class="column">{{recette.teaser}}</div>
     </div>
     <div>
       <div
