@@ -12,10 +12,15 @@ exports.handler = async (event, context) => {
     text: 'and easy to do anywhere, even with Node.js',
     html: '<strong>and easy to do anywhere, even with Node.js</strong>',
   };
-  sgMail.send(msg);
-
-  return {
-    statusCode: 200,
-    body: 'OK'
-  };
+  sgMail.send(msg).then(r => {
+    return {
+      statusCode: 200,
+      body: 'OK'
+    }
+  }).catch(e => {
+    return {
+      statusCode: 500,
+      body: e
+    }
+  })
 };
