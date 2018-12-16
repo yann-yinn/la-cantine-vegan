@@ -8,7 +8,7 @@
     "content-compiler": "node services/contentCompiler.js",
     "dev": "npm run cc && nuxt",
     "cc": "npm run content-compiler",
-    "build": "npm run functions:build && npm run cc && nuxt build",
+    "build": "npm run lambda:build && npm run cc && nuxt build",
     "start": "nuxt start",
     "generate": "npm run lambda:build && npm run cc && nuxt generate",
     "lambda:build": "netlify-lambda build lambda",
