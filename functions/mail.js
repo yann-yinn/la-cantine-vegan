@@ -1,4 +1,4 @@
-import sgMail from "@sendgrid/mail"
+const sgMail = require("@sendgrid/mail");
 
 exports.handler = async (event, context) => {
   // using SendGrid's v3 Node.js Library
