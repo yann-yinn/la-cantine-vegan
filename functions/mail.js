@@ -5,6 +5,7 @@ exports.handler = async (event, context) => {
   // using SendGrid's v3 Node.js Library
   // https://github.com/sendgrid/sendgrid-nodejs
   sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+  console.log("hello " + process.env.SENDGRID_API_KEY)
   const msg = {
     to: 'yann@yineo.fr',
     from: 'yann.boisselier@gmail.com',

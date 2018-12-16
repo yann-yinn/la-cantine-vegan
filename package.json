@@ -11,8 +11,8 @@
     "build": "npm run functions:build && npm run cc && nuxt build",
     "start": "nuxt start",
     "generate": "npm run functions:build && npm run cc && nuxt generate",
-    "functions:build": "netlify-lambda build functions/src",
-    "functions:serve": "netlify-lambda serve functions/src"
+    "functions:build": "netlify-lambda build functions",
+    "functions:serve": "netlify-lambda serve functions"
   },
   "dependencies": {
     "axios": "^0.18.0",
