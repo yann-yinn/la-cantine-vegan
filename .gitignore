@@ -88,7 +88,10 @@ static/api/*
 # :!ls
 test/e2e/videos
 
-functions/node_modules
+functions/src/node_modules
+
+# do NOT version env files, contains sensitive data for the lambda functions !
+.env
 
 
 
