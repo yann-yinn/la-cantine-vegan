@@ -1,0 +1,14 @@
+{
+  "name": "lambda-functions",
+  "version": "1.0.0",
+  "description": "AWS functions for netlify",
+  "main": "mail.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^6.3.1"
+  }
+}

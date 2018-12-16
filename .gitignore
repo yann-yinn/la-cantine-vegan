@@ -88,6 +88,8 @@ static/api/*
 # :!ls
 test/e2e/videos
 
+functions/node_modules
+
 
 
 
