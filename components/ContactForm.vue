@@ -110,18 +110,14 @@ export default {
         return
       }
       this.requestStatus = 'PENDING'
-      const options = {
-        text: `${this.inputs.email} vous a envoyé ce message depuis le site : ${
-          this.inputs.message
-        }`
-      }
       setTimeout(() => {
         axios
-          .post(process.env.contactSlackWebhook, JSON.stringify(options))
+          .post('http://localhost:9000/mail', JSON.stringify(this.inputs))
           .then(r => {
             this.requestStatus = 'FINISHED_OK'
           })
           .catch(e => {
+            console.log('e', e)
             this.requestStatus = 'FINISHED_ERROR'
             this.requestError = e.message
           })
