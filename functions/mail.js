@@ -1,6 +1,7 @@
-const sgMail = require('@sendgrid/mail');
+'use strict';
 
-exports.handler = async (event, context) => {
+exports.handler = (event, context) => {
+  const sgMail = require('@sendgrid/mail')
   // using SendGrid's v3 Node.js Library
   // https://github.com/sendgrid/sendgrid-nodejs
   sgMail.setApiKey(process.env.SENDGRID_API_KEY);
