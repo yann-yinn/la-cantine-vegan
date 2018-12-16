@@ -1,7 +1,10 @@
 ---
 title: test colonnes
 featured_image: /uploads/saag-aloo.jpg
-teaser: teaser
+teaser: >-
+  teaser teaser teaserteaser teaser teaserteaser teaser teaserteaser teaser
+  teaserteaser teaser teaserteaser teaser teaserteaser teaser teaserteaser
+  teaser teaserteaser teaser teaser
 preparation_time: '10'
 persons_number: '10'
 tags:
