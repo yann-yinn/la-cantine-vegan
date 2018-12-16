@@ -4,7 +4,7 @@
       <div class="columns">
         <div class="column is-one-quarter">
           <div class="featured-image-wrapper">
-            <img class="featured-image" :src="recette.featured_image.replace('/static', '')">
+            <img class="featured-image" :src="recette.featured_image">
           </div>
         </div>
         <div class="column">
