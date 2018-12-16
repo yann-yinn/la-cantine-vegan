@@ -112,7 +112,10 @@ export default {
       this.requestStatus = 'PENDING'
       setTimeout(() => {
         axios
-          .post('http://localhost:9000/mail', JSON.stringify(this.inputs))
+          .post(
+            LAMBDA_FUNCTIONS_BASE_URL + '/mail',
+            JSON.stringify(this.inputs)
+          )
           .then(r => {
             this.requestStatus = 'FINISHED_OK'
           })
