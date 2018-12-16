@@ -113,7 +113,7 @@ export default {
       setTimeout(() => {
         axios
           .post(
-            LAMBDA_FUNCTIONS_BASE_URL + '/mail',
+            process.env.LAMBDA_FUNCTIONS_BASE_URL + '/mail',
             JSON.stringify(this.inputs)
           )
           .then(r => {
