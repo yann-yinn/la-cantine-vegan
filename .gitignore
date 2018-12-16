@@ -89,7 +89,7 @@ static/api/*
 test/e2e/videos
 
 # netlify compiled lambda functions
-dist-functions
+functions
 
 # do NOT version env files, contains sensitive data for the lambda functions !
 .env
