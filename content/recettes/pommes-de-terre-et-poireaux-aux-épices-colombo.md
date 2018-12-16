@@ -1,5 +1,5 @@
 ---
-title: Pommes de terre et poireaux aux épices colombo
+title: Pommes de terre et poireaux aux épices
 featured_image: /uploads/pommes-de-terre-et-poireaux-aux-epices-colombo-vegan.jpg
 teaser: >-
   Laver les légumes.
