@@ -91,7 +91,7 @@ test/e2e/videos
 # netlify lambda functions
 functions/src/node_modules
 functions/src/.env
-dist-functions
+dist-lambda
 functions/dist
 !functions/dist/.gitkeep
 

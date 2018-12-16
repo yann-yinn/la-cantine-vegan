@@ -4,7 +4,6 @@ import sgMail from '@sendgrid/mail'
 exports.handler = (event, context, callback) => {
   // using SendGrid's v3 Node.js Library
   // https://github.com/sendgrid/sendgrid-nodejs
-  console.log("DEBUG :" + process.env.SENDGRID_API_KEY)
   sgMail.setApiKey(process.env.SENDGRID_API_KEY);
   const msg = {
     to: 'yann@yineo.fr',
