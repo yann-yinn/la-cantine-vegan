@@ -1,8 +1,11 @@
+// npm install @sendgrid/mail
+// npm install dotenv
+
 require('dotenv').config()
 import sgMail from '@sendgrid/mail'
 
 const headers = {
-  "Access-Control-Allow-Origin": "*",
+  "Access-Control-Allow-Origin": process.env.FRONT_BASE_URL,
   "Access-Control-Allow-Headers": "Content-Type"
 };
 
