@@ -1,5 +1,5 @@
 ---
-title: Quiche aux poireaux
+title: Quiche aux poireaux fondante
 featured_image: /uploads/quiche-fondante-poireaux-1024x683.jpg
 teaser: Une délicieuse tarte aux poireaux !
 ingredients:
