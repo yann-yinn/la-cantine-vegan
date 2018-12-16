@@ -110,6 +110,7 @@ export default {
         return
       }
       this.requestStatus = 'PENDING'
+      console.log('debug', process.env.LAMBDA_FUNCTIONS_BASE_URL)
       setTimeout(() => {
         axios
           .post(

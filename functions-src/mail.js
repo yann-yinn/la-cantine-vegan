@@ -6,6 +6,7 @@ import sgMail from '@sendgrid/mail'
 
 const headers = {
   "Access-Control-Allow-Origin": process.env.FRONT_BASE_URL,
+  "Vary": 'origin',
   "Access-Control-Allow-Headers": "Content-Type"
 };
 

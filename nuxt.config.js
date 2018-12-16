@@ -10,10 +10,6 @@ const ogDescription = 'Des recette vegan sexy, exotiques et pas prise de tete po
 const ogImage = `${baseUrl}/images/popcorn-500.jpg`
 
 module.exports = {
-  env: {
-    baseUrl: baseUrl,
-    contactSlackWebhook: 'none'
-  },
   mode: 'universal',
   generate: {
     routes: generateRoutes()
@@ -90,7 +86,7 @@ module.exports = {
   /*
    ** Nuxt.js modules
    */
-  modules: [],
+  modules: ['@nuxtjs/dotenv'],
   /*
    ** Axios module configuration
    */
