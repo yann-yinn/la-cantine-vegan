@@ -1,3 +1,4 @@
+require('dotenv').config()
 import sgMail from '@sendgrid/mail'
 
 exports.handler = (event, context, callback) => {
