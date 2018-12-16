@@ -2,7 +2,7 @@
   <div class="container section">
     <h1 class="title is-1">{{recette.title}}</h1>
     <div class="featured-image-wrapper">
-      <img class="featured-image" :src="recette.featured_image.replace('/static', '')">
+      <img class="featured-image" :src="recette.featured_image">
     </div>
     <div>
       <div
@@ -19,16 +19,40 @@
     </div>
     <hr>
 
-    <strong>Ingrédients:</strong>
-    <br>
-    <br>
-    <div class="ingredients">
-      <ul>
-        <li
-          v-for="(ingredient,i) in recette.ingredients"
-          :key="i"
-        >{{ingredient.quantity}} {{ingredient.name}}</li>
-      </ul>
+    <div class="ingredients columns">
+      <div class="column">
+        <div class="content">
+          <h4>{{recette.ingredients_title}}</h4>
+          <ul>
+            <li
+              v-for="(ingredient,i) in recette.ingredients"
+              :key="i"
+            >{{ingredient.quantity}} {{ingredient.name}}</li>
+          </ul>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <h4>{{recette.ingredients_2_title}}</h4>
+          <ul>
+            <li
+              v-for="(ingredient,i) in recette.ingredients_2"
+              :key="i"
+            >{{ingredient.quantity}} {{ingredient.name}}</li>
+          </ul>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <h4>{{recette.ingredients_3_title}}</h4>
+          <ul>
+            <li
+              v-for="(ingredient,i) in recette.ingredients_3"
+              :key="i"
+            >{{ingredient.quantity}} {{ingredient.name}}</li>
+          </ul>
+        </div>
+      </div>
     </div>
     <hr>
     <strong>Préparation</strong>
@@ -46,14 +70,11 @@ export default {
     recette: function() {
       return recettes.find(v => v.slug === this.$route.params.slug)
     }
-  }
-  /*
+  },
   head() {
-    const title = `Profil de ${this.person.prenom} ${
-      this.person.nom
-    }, freelance ${this.person.technologies.join(', ')}`
-    const description = `Popcorn : trouvez un développeur freelance à Nantes avec (vraiment) 0% de commission pour tout le monde`
-    const image = `${process.env.popcornBaseUrl}${this.person.photo}`
+    const title = this.recette.title
+    const description = this.recette.teaser
+    const image = this.recette.featured_image
     return {
       meta: [
         {
@@ -91,7 +112,6 @@ export default {
       ]
     }
   }
-  */
 }
 </script>
 

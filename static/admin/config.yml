@@ -4,7 +4,7 @@ backend:
 # This line should *not* be indented
 publish_mode: editorial_workflow
 # This line should *not* be indented
-media_folder: static/uploads # Media files will be stored in the repo under images/uploads
+media_folder: static/uploads # Media files will be stored in the repo under static/uploads
 public_folder: "/uploads"
 collections:
   - name: "recette" # Used in routes, e.g., /admin/collections/blog
@@ -17,13 +17,28 @@ collections:
       - {label: "Featured Image", name: "featured_image", widget: "image"}
       - {label: "Teaser", name: "teaser", widget: "markdown"}
       - {label: "Body", name: "body", widget: "markdown"}
-      - label: "Ingrédient"
+      - {label: "Préparation / cuisson", name: "preparation_time", widget: "number"}
+      - {label: "Nombre de personnes", name: "persons_number", widget: "number"}
+      - {label: "Mots clefs", name: "tags", widget: "list" }
+      - {label: "Ingrédients - titre de la colonne 1", name: "ingredients_title", widget: "string" }
+      - label: "Ingrédients - colonne 1"
         name: "ingredients"
         widget: "list"
         fields:
           - {label: "Quantité", name: "quantity", widget: "string"}
           - {label: "ingrédient", name: "name", widget: "string"}
-      - {label: "Préparation / cuisson", name: "preparation_time", widget: "number"}
-      - {label: "Nombre de personnes", name: "persons_number", widget: "number"}
-      - {label: "Mots clefs", name: "tags", widget: "list", }
+      - {label: "Ingrédients : titre de la colonne 2", name: "ingredients_2_title", widget: "string" }
+      - label: "Ingrédients : colonne 2"
+        name: "ingredients_2"
+        widget: "list"
+        fields:
+          - {label: "Quantité", name: "quantity", widget: "string"}
+          - {label: "ingrédient", name: "name", widget: "string"}
+      - {label: "Ingrédients : titre de la colonne 3", name: "ingredients_3_title", widget: "string" }
+      - label: "Ingrédients : colonne 3"
+        name: "ingredients_3"
+        widget: "list"
+        fields:
+          - {label: "Quantité", name: "quantity", widget: "string"}
+          - {label: "ingrédient", name: "name", widget: "string"}
       
