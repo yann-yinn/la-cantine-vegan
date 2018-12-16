@@ -1,13 +1,11 @@
 // npm install twilio
 // const twilio = require('twilio');
-
+/*
 const headers = {
   "Access-Control-Allow-Origin": process.env.FRONT_BASE_URL,
   "Access-Control-Allow-Headers": "Content-Type"
 };
-/**
-* @param context {WebtaskContext}
-*/
+
 exports.handler = (event, context, callback) => {
   const payload = JSON.parse(event.body)
   // Download the helper library from https://www.twilio.com/docs/node/install
@@ -30,3 +28,4 @@ exports.handler = (event, context, callback) => {
     })
     .done();
 };
+*/
