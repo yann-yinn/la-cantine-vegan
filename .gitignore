@@ -88,12 +88,8 @@ static/api/*
 # :!ls
 test/e2e/videos
 
-# netlify lambda functions
-functions/src/node_modules
-functions/src/.env
-dist-lambda
-functions/dist
-!functions/dist/.gitkeep
+# netlify compiled lambda functions
+dist-functions
 
 # do NOT version env files, contains sensitive data for the lambda functions !
 .env

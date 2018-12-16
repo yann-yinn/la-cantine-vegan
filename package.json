@@ -11,8 +11,8 @@
     "build": "npm run lambda:build && npm run cc && nuxt build",
     "start": "nuxt start",
     "generate": "npm run lambda:build && npm run cc && nuxt generate",
-    "lambda:build": "netlify-lambda build lambda",
-    "lambda:serve": "netlify-lambda serve lambda"
+    "lambda:build": "netlify-lambda build functions",
+    "lambda:serve": "netlify-lambda serve functions"
   },
   "dependencies": {
     "@sendgrid/mail": "^6.3.1",
