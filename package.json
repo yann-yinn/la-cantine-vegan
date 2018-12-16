@@ -10,7 +10,9 @@
     "cc": "npm run content-compiler",
     "build": "npm run functions:build && npm run cc && nuxt build",
     "start": "nuxt start",
-    "generate": "npm run cc && nuxt generate"
+    "generate": "npm run functions:build && npm run cc && nuxt generate",
+    "functions:build": "netlify-lambda build functions-src",
+    "functions:serve": "netlify-lambda serve functions-src"
   },
   "dependencies": {
     "axios": "^0.18.0",
