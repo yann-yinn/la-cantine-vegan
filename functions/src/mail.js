@@ -1,3 +1,4 @@
+require('dotenv').config()
 import sgMail from '@sendgrid/mail'
 
 exports.handler = async (event, context) => {
@@ -11,5 +12,10 @@ exports.handler = async (event, context) => {
     text: 'and easy to do anywhere, even with Node.js',
     html: '<strong>and easy to do anywhere, even with Node.js</strong>',
   };
-  return sgMail.send(msg);
+  sgMail.send(msg);
+
+  return {
+    statusCode: 200,
+    body: 'OK'
+  };
 };
