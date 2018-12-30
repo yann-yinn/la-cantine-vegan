@@ -5,12 +5,10 @@
   "author": "yann",
   "private": true,
   "scripts": {
-    "content-compiler": "node services/contentCompiler.js",
-    "dev": "npm run cc && nuxt",
-    "cc": "npm run content-compiler",
-    "build": "npm run lambda:build && npm run cc && nuxt build",
+    "dev": "nuxt",
+    "build": "npm run lambda:build && nuxt build",
     "start": "nuxt start",
-    "generate": "npm run lambda:build && npm run cc && nuxt generate",
+    "generate": "npm run lambda:build && nuxt generate",
     "lambda:build": "netlify-lambda build functions-src",
     "lambda:serve": "netlify-lambda serve functions-src"
   },
@@ -23,6 +21,7 @@
     "markdown-it": "^8.4.2",
     "netlify-lambda": "^1.1.1",
     "nuxt": "^2.3.4",
+    "nuxt-gustave": "0.0.5",
     "slug": "^0.9.2",
     "yaml-front-matter": "^4.0.0"
   },

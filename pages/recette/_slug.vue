@@ -73,7 +73,10 @@ import recettes from '@/static/api/recettes'
 export default {
   computed: {
     recette: function() {
-      return recettes.find(v => v.slug === this.$route.params.slug)
+      const recette = recettes.data.find(node => {
+        return node.data.$slug === this.$route.params.slug
+      })
+      return recette.data
     }
   },
   head() {

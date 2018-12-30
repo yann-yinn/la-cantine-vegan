@@ -1,19 +1,16 @@
 const pkg = require('./package')
-import { generateRoutes } from './services/helpers'
 
 const baseUrl = 'https://la-cantine-vegan.github.io'
 
 // les informations pour les metatags à destination des réseaux sociaux
 // pour l'aperçu quand on partage un lien.
 const ogTitle = 'La cantine vegan'
-const ogDescription = 'Des recette vegan sexy, exotiques et pas prise de tete pour tous les jours'
+const ogDescription =
+  'Des recette vegan sexy, exotiques et pas prise de tete pour tous les jours'
 const ogImage = `${baseUrl}/images/popcorn-500.jpg`
 
 module.exports = {
   mode: 'universal',
-  generate: {
-    routes: generateRoutes()
-  },
   /*
    ** Headers of the page
    */
@@ -86,7 +83,7 @@ module.exports = {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/dotenv'],
+  modules: ['@nuxtjs/dotenv', 'nuxt-gustave'],
   /*
    ** Axios module configuration
    */
@@ -108,6 +105,12 @@ module.exports = {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) { }
+    extend(config, ctx) {}
+  },
+  gustave: {
+    importers: [
+      { file: 'importers/recettes.js' },
+      { file: 'importers/pages.js' }
+    ]
   }
 }
