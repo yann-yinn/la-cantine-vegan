@@ -108,9 +108,6 @@ module.exports = {
     extend(config, ctx) {}
   },
   gustave: {
-    importers: [
-      { file: 'importers/recettes.js' },
-      { file: 'importers/pages.js' }
-    ]
+    importers: [{ file: 'importers/recettes.js' }]
   }
 }
